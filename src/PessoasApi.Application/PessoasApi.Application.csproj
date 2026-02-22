@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>PessoasApi.Application</RootNamespace>
+    <AssemblyName>PessoasApi.Application</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../PessoasApi.Domain/PessoasApi.Domain.csproj" />
+  </ItemGroup>
+</Project>
