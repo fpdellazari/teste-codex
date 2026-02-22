@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <RootNamespace>PessoasApi.API</RootNamespace>
+    <AssemblyName>PessoasApi.API</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../PessoasApi.Application/PessoasApi.Application.csproj" />
+    <ProjectReference Include="../PessoasApi.Infrastructure/PessoasApi.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>
