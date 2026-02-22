@@ -2,411 +2,748 @@ namespace PessoasApi.Application.People.Queries;
 
 public static class MedievalNamesCatalog
 {
-    public static readonly IReadOnlyList<string> MaleNames =
-    [
-        "Aldric Ironwood",
-        "Aldric Blackthorn",
-        "Aldric Stormvale",
-        "Aldric Ravencrest",
-        "Aldric Wolfhart",
-        "Aldric Brighthelm",
-        "Aldric Ashford",
-        "Aldric Stonekeep",
-        "Aldric Dawnbringer",
-        "Aldric Silveroak",
-        "Baldwin Ironwood",
-        "Baldwin Blackthorn",
-        "Baldwin Stormvale",
-        "Baldwin Ravencrest",
-        "Baldwin Wolfhart",
-        "Baldwin Brighthelm",
-        "Baldwin Ashford",
-        "Baldwin Stonekeep",
-        "Baldwin Dawnbringer",
-        "Baldwin Silveroak",
-        "Cedric Ironwood",
-        "Cedric Blackthorn",
-        "Cedric Stormvale",
-        "Cedric Ravencrest",
-        "Cedric Wolfhart",
-        "Cedric Brighthelm",
-        "Cedric Ashford",
-        "Cedric Stonekeep",
-        "Cedric Dawnbringer",
-        "Cedric Silveroak",
-        "Darian Ironwood",
-        "Darian Blackthorn",
-        "Darian Stormvale",
-        "Darian Ravencrest",
-        "Darian Wolfhart",
-        "Darian Brighthelm",
-        "Darian Ashford",
-        "Darian Stonekeep",
-        "Darian Dawnbringer",
-        "Darian Silveroak",
-        "Edric Ironwood",
-        "Edric Blackthorn",
-        "Edric Stormvale",
-        "Edric Ravencrest",
-        "Edric Wolfhart",
-        "Edric Brighthelm",
-        "Edric Ashford",
-        "Edric Stonekeep",
-        "Edric Dawnbringer",
-        "Edric Silveroak",
-        "Falkner Ironwood",
-        "Falkner Blackthorn",
-        "Falkner Stormvale",
-        "Falkner Ravencrest",
-        "Falkner Wolfhart",
-        "Falkner Brighthelm",
-        "Falkner Ashford",
-        "Falkner Stonekeep",
-        "Falkner Dawnbringer",
-        "Falkner Silveroak",
-        "Gareth Ironwood",
-        "Gareth Blackthorn",
-        "Gareth Stormvale",
-        "Gareth Ravencrest",
-        "Gareth Wolfhart",
-        "Gareth Brighthelm",
-        "Gareth Ashford",
-        "Gareth Stonekeep",
-        "Gareth Dawnbringer",
-        "Gareth Silveroak",
-        "Hadrian Ironwood",
-        "Hadrian Blackthorn",
-        "Hadrian Stormvale",
-        "Hadrian Ravencrest",
-        "Hadrian Wolfhart",
-        "Hadrian Brighthelm",
-        "Hadrian Ashford",
-        "Hadrian Stonekeep",
-        "Hadrian Dawnbringer",
-        "Hadrian Silveroak",
-        "Ivor Ironwood",
-        "Ivor Blackthorn",
-        "Ivor Stormvale",
-        "Ivor Ravencrest",
-        "Ivor Wolfhart",
-        "Ivor Brighthelm",
-        "Ivor Ashford",
-        "Ivor Stonekeep",
-        "Ivor Dawnbringer",
-        "Ivor Silveroak",
-        "Jareth Ironwood",
-        "Jareth Blackthorn",
-        "Jareth Stormvale",
-        "Jareth Ravencrest",
-        "Jareth Wolfhart",
-        "Jareth Brighthelm",
-        "Jareth Ashford",
-        "Jareth Stonekeep",
-        "Jareth Dawnbringer",
-        "Jareth Silveroak",
-        "Kael Ironwood",
-        "Kael Blackthorn",
-        "Kael Stormvale",
-        "Kael Ravencrest",
-        "Kael Wolfhart",
-        "Kael Brighthelm",
-        "Kael Ashford",
-        "Kael Stonekeep",
-        "Kael Dawnbringer",
-        "Kael Silveroak",
-        "Leoric Ironwood",
-        "Leoric Blackthorn",
-        "Leoric Stormvale",
-        "Leoric Ravencrest",
-        "Leoric Wolfhart",
-        "Leoric Brighthelm",
-        "Leoric Ashford",
-        "Leoric Stonekeep",
-        "Leoric Dawnbringer",
-        "Leoric Silveroak",
-        "Magnus Ironwood",
-        "Magnus Blackthorn",
-        "Magnus Stormvale",
-        "Magnus Ravencrest",
-        "Magnus Wolfhart",
-        "Magnus Brighthelm",
-        "Magnus Ashford",
-        "Magnus Stonekeep",
-        "Magnus Dawnbringer",
-        "Magnus Silveroak",
-        "Niall Ironwood",
-        "Niall Blackthorn",
-        "Niall Stormvale",
-        "Niall Ravencrest",
-        "Niall Wolfhart",
-        "Niall Brighthelm",
-        "Niall Ashford",
-        "Niall Stonekeep",
-        "Niall Dawnbringer",
-        "Niall Silveroak",
-        "Osmund Ironwood",
-        "Osmund Blackthorn",
-        "Osmund Stormvale",
-        "Osmund Ravencrest",
-        "Osmund Wolfhart",
-        "Osmund Brighthelm",
-        "Osmund Ashford",
-        "Osmund Stonekeep",
-        "Osmund Dawnbringer",
-        "Osmund Silveroak",
-        "Percival Ironwood",
-        "Percival Blackthorn",
-        "Percival Stormvale",
-        "Percival Ravencrest",
-        "Percival Wolfhart",
-        "Percival Brighthelm",
-        "Percival Ashford",
-        "Percival Stonekeep",
-        "Percival Dawnbringer",
-        "Percival Silveroak",
-        "Quentin Ironwood",
-        "Quentin Blackthorn",
-        "Quentin Stormvale",
-        "Quentin Ravencrest",
-        "Quentin Wolfhart",
-        "Quentin Brighthelm",
-        "Quentin Ashford",
-        "Quentin Stonekeep",
-        "Quentin Dawnbringer",
-        "Quentin Silveroak",
-        "Roderic Ironwood",
-        "Roderic Blackthorn",
-        "Roderic Stormvale",
-        "Roderic Ravencrest",
-        "Roderic Wolfhart",
-        "Roderic Brighthelm",
-        "Roderic Ashford",
-        "Roderic Stonekeep",
-        "Roderic Dawnbringer",
-        "Roderic Silveroak",
-        "Stefan Ironwood",
-        "Stefan Blackthorn",
-        "Stefan Stormvale",
-        "Stefan Ravencrest",
-        "Stefan Wolfhart",
-        "Stefan Brighthelm",
-        "Stefan Ashford",
-        "Stefan Stonekeep",
-        "Stefan Dawnbringer",
-        "Stefan Silveroak",
-        "Tristan Ironwood",
-        "Tristan Blackthorn",
-        "Tristan Stormvale",
-        "Tristan Ravencrest",
-        "Tristan Wolfhart",
-        "Tristan Brighthelm",
-        "Tristan Ashford",
-        "Tristan Stonekeep",
-        "Tristan Dawnbringer",
-        "Tristan Silveroak",
-    ];
+    public static readonly IReadOnlyList<string> MaleNames = ParseNames(
+        """
+        Herbert
+        Hubert
+        Humberto
+        Ivamberto
+        João
+        Julian
+        Julião
+        José
+        Donaldo
+        Silva
+        Eugênio
+        Martin
+        Leandro
+        Leonardo
+        Riobaldo
+        Pícaro
+        Daniel
+        Victor
+        Ramiro
+        Manfredo
+        Porcão
+        Elias
+        Jairo
+        Manuel
+        Palácius
+        Carlos
+        Euzébio
+        Irineu
+        Lívius
+        Máximus
+        Pilatos
+        Spilman
+        Cristian
+        Carlitos
+        Alceu
+        Polinésio
+        Gordon
+        Sísifo
+        Ícaro
+        Igor
+        Gordo
+        Matador
+        Samuel
+        Jamiel
+        Eurico
+        Letício
+        Heleno
+        Denis
+        Menelau
+        Sócrates
+        Epicuro
+        Eratóstenes
+        Heráclito
+        Satanaz
+        Demócrito
+        Skylab
+        Locke
+        Louco
+        Índio
+        Tobias
+        John
+        Paul
+        Maligno
+        Benigno
+        Alberto
+        Justino
+        Francisco
+        Laerte
+        Isaque
+        Apu
+        Moe
+        Mickey
+        Isaías
+        Chorão
+        Henrique
+        Louis
+        Casimiro
+        Orlando
+        Sebastião
+        Sebastian
+        Javé
+        Zidane
+        Milton
+        Elton
+        Selton
+        Newton
+        Amaranto
+        Amarante
+        Neófito
+        Filisteu
+        Doente
+        Tibúrcio
+        Hércules
+        Perseu
+        Teseu
+        Espanhol
+        Chinês
+        Hector
+        Marcolino
+        Francolino
+        Tristão
+        César
+        Júlio
+        Cômodo
+        Joaquim
+        Fênix
+        Bruce
+        Nicolas
+        Hermeto
+        Ernesto
+        Anfitrião
+        Moisés
+        Erik
+        Érico
+        Jaques
+        Pierre
+        Patrício
+        Patrick
+        Normando
+        Normam
+        Adam
+        Adão
+        Leitão
+        Leão
+        Cavalo
+        Inácio
+        Frido
+        Fredo
+        Alfredo
+        Godofredo
+        Figueiredo
+        Horácio
+        Átila
+        Hermes
+        Ulisses
+        Alexandre
+        Agamenon
+        Aquiles
+        Odisseu
+        Coríntios
+        Morfeu
+        Orfeu
+        Brancaleone
+        Napoleão
+        Adolfo
+        Antônio
+        Moacir
+        Euzébio
+        Cristóvão
+        Mephisto
+        Baltazar
+        Belchior
+        Burgos
+        Ubirajara
+        Ptolomeu
+        Próximo
+        Asterix
+        Obelix
+        Willian
+        Guilherme
+        Lúcio
+        Raul
+        Demétrios
+        Lester
+        Chester
+        Walter
+        Wagner
+        Valdir
+        Pedro
+        Pedroso
+        Pedreiro
+        Alberto
+        Roberto
+        Oscar
+        Osmar
+        Javier
+        Buzuzima
+        Bráulio
+        Plínio
+        Miro
+        Quaderna
+        Torquemada
+        Ademar
+        Mudinho
+        Capeta
+        Odorico
+        Odoacro
+        Teodorico
+        Cassandro
+        Olavo
+        Mariano
+        Justo
+        Roderigo
+        Juarez
+        Antônio
+        Adair
+        Damaceno
+        Valdemar
+        Jair
+        Cecílio
+        Simon
+        Lázaro
+        Ari
+        Frederico
+        Derico
+        Quasímodo
+        Falabela
+        Binho
+        Cândido
+        Graciano
+        Hugo
+        Afredo
+        Dario
+        Luís
+        Garibaldi
+        Dagoberto
+        Guilherme
+        Bismark
+        Trotski
+        Stalin
+        Lenin
+        Maneta
+        Caolho
+        Zureta
+        Ziraldo
+        Zurita
+        Nelson
+        Otto
+        Lobisomen
+        Bucéfalo
+        Madruga
+        Filipesco
+        Clóvis
+        Orelhudo
+        Maricas
+        Olegário
+        Sigfrido
+        Sigismundo
+        Gado
+        Aranha
+        Ronaldo
+        Bill
+        Faber
+        Wagner
+        Fedorento
+        Camilo
+        Tonho
+        Flamingo
+        Lucius
+        Simonal
+        Vanderlei
+        Galvão
+        Camendongo
+        Ifrit
+        Rudinei
+        Bolívar
+        Bondoso
+        Pepino
+        Gaguinho
+        Ocelot
+        Anatole
+        Hipólito
+        Percival
+        Rubinho
+        Peralta
+        Aquilante
+        Zampàno
+        Saibara
+        Peregrino
+        Oráculo
+        Vespúcio
+        Tirolês
+        Glauco
+        Vilson
+        Lingüiça
+        Augusto
+        Ariosvaldo
+        Virgílio
+        Quincas
+        Lázaro
+        Minuano
+        Valentin
+        Ingmar
+        Carniceiro
+        Adenauer
+        Godard
+        Raimundo
+        Píramo
+        Nicolau
+        George
+        Bruce
+        Vinícius
+        Lucrécio
+        Abelardo
+        Dario
+        Benjamim
+        Teodorico
+        Emilio
+        Basílio
+        Caolho
+        Henrique
+        Persivaldo
+        Casimiro
+        Aramis
+        Armand
+        Rui
+        Amarante
+        Blanca
+        Miro
+        Aragão
+        Vilson
+        Gafgarião
+        Garvas
+        Otávio
+        Valentino
+        Tolentino
+        Graciano
+        Bryan
+        Rômulo
+        Armando
+        Ezequiel
+        Natan
+        Édipo
+        Silvio
+        Simon
+        Simão
+        Bartolomeu
+        Baltazar
+        Juan
+        Bernardo
+        Eduardo
+        Homero
+        Evandro
+        Guilherme
+        Antônio
+        Cícero
+        Silas
+        Tadeu
+        Judas
+        Julião
+        Julian
+        Júlio
+        Osmar
+        Marcos
+        Milton
+        Radamés
+        Mauro
+        Bagoas
+        Isidoro
+        Izaías
+        Vinícius
+        Enéas
+        Benjamim
+        Morfeu
+        Orfeu
+        Saulo
+        Saul
+        Dionísio
+        Baco
+        Horácio
+        Rafael
+        Amarante
+        Cássio
+        Éverton
+        Inácio
+        João
+        Lucas
+        Cândido
+        Samuel
+        Paulo
+        Vitor
+        Elgar
+        Cervantes
+        André
+        Adan
+        Parmênion
+        Olímpio
+        Miro
+        Malaquias
+        Fernando
+        Alceu
+        Tristão
+        Cronos
+        Jonas
+        Édipo
+        Silvio
+        Zacarias
+        Pablo
+        Telêmaco
+        Quênia
+        Gúliver
+        Homer
+        Miguel
+        Ronaldo
+        Fujin
+        Waldir
+        Gregório
+        Ferdinando
+        Ivan
+        Dalton
+        Lauro
+        Bóris
+        Cleiton
+        Marcos
+        Ramiro
+        Marlon
+        Damião
+        Raul
+        Apolo
+        Joel
+        Grendel
+        Camus
+        Alberto
+        Salmôneos
+        Filipesco
+        Juanito
+        Plínio
+        Denilson
+        Adilson
+        Garvas
+        Pompeu
+        Aladar
+        Bóris
+        Daniel
+        Leonel
+        Siegfried
+        Martin
+        Martinho
+        Jonatan
+        Natanael
+        Eurico
+        Cecílio
+        Tiago
+        Canon
+        Oscar
+        Olaf
+        Ajax
+        Frido
+        Cristian
+        Blanca
+        Adolfo
+        Leandro
+        Ângelo
+        Golias
+        Cleber
+        Argos
+        Hermínio
+        Herman
+        Normando
+        Goro
+        Chiburgo
+        Petrúquio
+        Celso
+        Juremir
+        Barcelos
+        Tirolês
+        Batistuta
+        Sancho
+        Alonso
+        Afonso
+        Firitóbulo
+        Lancelot
+        Arthur
+        Espiridião
+        Jacinto
+        Magnus
+        Magno
+        Galileu
+        Olívio
+        Oliver
+        Heféstio
+        Marisqueiro
+        Douglas
+        Osvaldo
+        Febrônio
+        Pícaro
+        Funâmbulo
+        Visigodo
+        Michelângelo
+        Salazar
+        Caliban
+        Patolino
+        Timão
+        Timóteo
+        Eriberto
+        Egberto
+        Gomez
+        Brutus
+        Fausto
+        Faustino
+        Judas
+        Sukamon
+        Neimateuminto
+        Hugo
+        Beti
+        Redmond
+        Barry
+        Barnabé
+        Miconga
+        Rolando
+        Roland
+        Filadelfo
+        Elfgar
+        Leofrigo
+        Samir
+        Ibraim
+        Ali
+        Etevaldo
+        Marcel
+        Tango
+        Anatole
+        Zidane
+        Calhorda
+        Rubião
+        Geremias
+        Donatelo
+        """);
 
-    public static readonly IReadOnlyList<string> FemaleNames =
-    [
-        "Adela Ironwood",
-        "Adela Blackthorn",
-        "Adela Stormvale",
-        "Adela Ravencrest",
-        "Adela Wolfhart",
-        "Adela Brighthelm",
-        "Adela Ashford",
-        "Adela Stonekeep",
-        "Adela Dawnbringer",
-        "Adela Silveroak",
-        "Beatrice Ironwood",
-        "Beatrice Blackthorn",
-        "Beatrice Stormvale",
-        "Beatrice Ravencrest",
-        "Beatrice Wolfhart",
-        "Beatrice Brighthelm",
-        "Beatrice Ashford",
-        "Beatrice Stonekeep",
-        "Beatrice Dawnbringer",
-        "Beatrice Silveroak",
-        "Catrin Ironwood",
-        "Catrin Blackthorn",
-        "Catrin Stormvale",
-        "Catrin Ravencrest",
-        "Catrin Wolfhart",
-        "Catrin Brighthelm",
-        "Catrin Ashford",
-        "Catrin Stonekeep",
-        "Catrin Dawnbringer",
-        "Catrin Silveroak",
-        "Damaris Ironwood",
-        "Damaris Blackthorn",
-        "Damaris Stormvale",
-        "Damaris Ravencrest",
-        "Damaris Wolfhart",
-        "Damaris Brighthelm",
-        "Damaris Ashford",
-        "Damaris Stonekeep",
-        "Damaris Dawnbringer",
-        "Damaris Silveroak",
-        "Elowen Ironwood",
-        "Elowen Blackthorn",
-        "Elowen Stormvale",
-        "Elowen Ravencrest",
-        "Elowen Wolfhart",
-        "Elowen Brighthelm",
-        "Elowen Ashford",
-        "Elowen Stonekeep",
-        "Elowen Dawnbringer",
-        "Elowen Silveroak",
-        "Fiora Ironwood",
-        "Fiora Blackthorn",
-        "Fiora Stormvale",
-        "Fiora Ravencrest",
-        "Fiora Wolfhart",
-        "Fiora Brighthelm",
-        "Fiora Ashford",
-        "Fiora Stonekeep",
-        "Fiora Dawnbringer",
-        "Fiora Silveroak",
-        "Gwyneth Ironwood",
-        "Gwyneth Blackthorn",
-        "Gwyneth Stormvale",
-        "Gwyneth Ravencrest",
-        "Gwyneth Wolfhart",
-        "Gwyneth Brighthelm",
-        "Gwyneth Ashford",
-        "Gwyneth Stonekeep",
-        "Gwyneth Dawnbringer",
-        "Gwyneth Silveroak",
-        "Helena Ironwood",
-        "Helena Blackthorn",
-        "Helena Stormvale",
-        "Helena Ravencrest",
-        "Helena Wolfhart",
-        "Helena Brighthelm",
-        "Helena Ashford",
-        "Helena Stonekeep",
-        "Helena Dawnbringer",
-        "Helena Silveroak",
-        "Isolde Ironwood",
-        "Isolde Blackthorn",
-        "Isolde Stormvale",
-        "Isolde Ravencrest",
-        "Isolde Wolfhart",
-        "Isolde Brighthelm",
-        "Isolde Ashford",
-        "Isolde Stonekeep",
-        "Isolde Dawnbringer",
-        "Isolde Silveroak",
-        "Jessamine Ironwood",
-        "Jessamine Blackthorn",
-        "Jessamine Stormvale",
-        "Jessamine Ravencrest",
-        "Jessamine Wolfhart",
-        "Jessamine Brighthelm",
-        "Jessamine Ashford",
-        "Jessamine Stonekeep",
-        "Jessamine Dawnbringer",
-        "Jessamine Silveroak",
-        "Katerin Ironwood",
-        "Katerin Blackthorn",
-        "Katerin Stormvale",
-        "Katerin Ravencrest",
-        "Katerin Wolfhart",
-        "Katerin Brighthelm",
-        "Katerin Ashford",
-        "Katerin Stonekeep",
-        "Katerin Dawnbringer",
-        "Katerin Silveroak",
-        "Liora Ironwood",
-        "Liora Blackthorn",
-        "Liora Stormvale",
-        "Liora Ravencrest",
-        "Liora Wolfhart",
-        "Liora Brighthelm",
-        "Liora Ashford",
-        "Liora Stonekeep",
-        "Liora Dawnbringer",
-        "Liora Silveroak",
-        "Melisande Ironwood",
-        "Melisande Blackthorn",
-        "Melisande Stormvale",
-        "Melisande Ravencrest",
-        "Melisande Wolfhart",
-        "Melisande Brighthelm",
-        "Melisande Ashford",
-        "Melisande Stonekeep",
-        "Melisande Dawnbringer",
-        "Melisande Silveroak",
-        "Nerissa Ironwood",
-        "Nerissa Blackthorn",
-        "Nerissa Stormvale",
-        "Nerissa Ravencrest",
-        "Nerissa Wolfhart",
-        "Nerissa Brighthelm",
-        "Nerissa Ashford",
-        "Nerissa Stonekeep",
-        "Nerissa Dawnbringer",
-        "Nerissa Silveroak",
-        "Odette Ironwood",
-        "Odette Blackthorn",
-        "Odette Stormvale",
-        "Odette Ravencrest",
-        "Odette Wolfhart",
-        "Odette Brighthelm",
-        "Odette Ashford",
-        "Odette Stonekeep",
-        "Odette Dawnbringer",
-        "Odette Silveroak",
-        "Petra Ironwood",
-        "Petra Blackthorn",
-        "Petra Stormvale",
-        "Petra Ravencrest",
-        "Petra Wolfhart",
-        "Petra Brighthelm",
-        "Petra Ashford",
-        "Petra Stonekeep",
-        "Petra Dawnbringer",
-        "Petra Silveroak",
-        "Rowena Ironwood",
-        "Rowena Blackthorn",
-        "Rowena Stormvale",
-        "Rowena Ravencrest",
-        "Rowena Wolfhart",
-        "Rowena Brighthelm",
-        "Rowena Ashford",
-        "Rowena Stonekeep",
-        "Rowena Dawnbringer",
-        "Rowena Silveroak",
-        "Seraphine Ironwood",
-        "Seraphine Blackthorn",
-        "Seraphine Stormvale",
-        "Seraphine Ravencrest",
-        "Seraphine Wolfhart",
-        "Seraphine Brighthelm",
-        "Seraphine Ashford",
-        "Seraphine Stonekeep",
-        "Seraphine Dawnbringer",
-        "Seraphine Silveroak",
-        "Theodora Ironwood",
-        "Theodora Blackthorn",
-        "Theodora Stormvale",
-        "Theodora Ravencrest",
-        "Theodora Wolfhart",
-        "Theodora Brighthelm",
-        "Theodora Ashford",
-        "Theodora Stonekeep",
-        "Theodora Dawnbringer",
-        "Theodora Silveroak",
-        "Ysabel Ironwood",
-        "Ysabel Blackthorn",
-        "Ysabel Stormvale",
-        "Ysabel Ravencrest",
-        "Ysabel Wolfhart",
-        "Ysabel Brighthelm",
-        "Ysabel Ashford",
-        "Ysabel Stonekeep",
-        "Ysabel Dawnbringer",
-        "Ysabel Silveroak",
-    ];
+    public static readonly IReadOnlyList<string> FemaleNames = ParseNames(
+        """
+        Lia
+        Laia
+        Lena
+        Ana
+        Maria
+        Joana
+        Madalena
+        Lilith
+        Eva
+        Calipso
+        Ágata
+        Pandora
+        Monalisa
+        Marisa
+        Rosa
+        Iracema
+        Juliana
+        Nastácia
+        Odara
+        Camila
+        Diana
+        Rosalinda
+        Daiana
+        Mariana
+        Letícia
+        Eleonor
+        Isolda
+        Isadora
+        Celeste
+        Brigite
+        Greta
+        Helga
+        Fernanda
+        Amanda
+        Lisandra
+        Elisa
+        Elizete
+        Elisandra
+        Uriko
+        Fox
+        Penélope
+        Xena
+        Sheeva
+        Helena
+        Malena
+        Isabel
+        Isabela
+        Laura
+        Lara
+        Mikado
+        Miluda
+        Mia
+        Renata
+        Leona
+        Clara
+        Joaquina
+        Filomena
+        Carina
+        Patrícia
+        Tisbe
+        Lilica
+        Oksana
+        Vera
+        Euvira
+        Marta
+        Mariana
+        Juliana
+        Júlia
+        Agnes
+        Chica
+        Gabriela
+        Rosana
+        Letícia
+        Dalila
+        Priscila
+        Vanessa
+        Frida
+        Freya
+        Abgail
+        Cacilda
+        Cássia
+        Carol
+        Carolina
+        Cassandra
+        Matilde
+        Matilda
+        Messalina
+        Lucrécia
+        Diana
+        Artemis
+        Beatrix
+        Verônica
+        Daniela
+        Ursula
+        Rebeca
+        Ovelia
+        Lolita
+        Lola
+        Dolores
+        Isolda
+        Cloroquina
+        Roxana
+        Minerva
+        Inês
+        Guíniver
+        Lurdes
+        Filipesca
+        Catarina
+        Teresa
+        Brigite
+        Atena
+        Marin
+        Sheena
+        Sheeva
+        Sora
+        Mimi
+        Cari
+        Elza
+        Nara
+        Rosalinda
+        Olívia
+        Paquette
+        Cunegunda
+        Abigail
+        Rebeca
+        Titânia
+        Ana
+        Roberta
+        Laura
+        Joana
+        Cornélia
+        Ofélia
+        Atena
+        Rosa
+        Agnes
+        Vanda
+        Mariana
+        Alana
+        Samanta
+        Elisa
+        Pandora
+        Aline
+        Aurora
+        Mia
+        Freya
+        Jô
+        Bruna
+        Vivi
+        Anastássia
+        Joaquina
+        Sophia
+        Sophitia
+        Agrias
+        Valéria
+        Morgana
+        Taís
+        Josefina
+        Lívia
+        Lucila
+        Perséfone
+        Griselda
+        Jurema
+        Natália
+        Periquita
+        Cassandra
+        Desdêmona
+        Rita
+        Chimene
+        Jocasta
+        Alexandra
+        Chiquinha
+        Cleópatra
+        Cornélia
+        Calpúrnia
+        Madalena
+        Bolena
+        Emília
+        Sônia
+        Hebe
+        Genebra
+        Guinever
+        Margarina
+        Poliana
+        Mina
+        Galega
+        Clarice
+        Clarissa
+        Efigênia
+        Eugênia
+        Greta
+        Clementina
+        Dulcinéia
+        Esther
+        Eva
+        Griselda
+        Zelda
+        Raquel
+        Florentina
+        Secretária
+        Catita
+        Paloma
+        Adúltera
+        Dançarina
+        Luna
+        Karen
+        Pópori
+        Ann
+        Eulália
+        Celeste
+        Tanajura
+        Shiva
+        Godiva
+        Saga
+        Desempregada
+        Estela
+        Doroteia
+        """);
+
+    private static IReadOnlyList<string> ParseNames(string block) =>
+        block
+            .Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+            .ToList();
 }
