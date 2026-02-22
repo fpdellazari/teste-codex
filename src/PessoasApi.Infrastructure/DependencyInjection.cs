@@ -22,7 +22,7 @@ public static class DependencyInjection
         });
 
         services.AddScoped<IPersonRepository, PersonRepository>();
-        services.AddScoped<IQueryHandler<ListPeopleQuery, IReadOnlyList<PersonResponse>>, ListPeopleQueryHandler>();
+        services.AddScoped<IQueryHandler<ListPeopleQuery, PersonResponse>, ListPeopleQueryHandler>();
 
         return services;
     }

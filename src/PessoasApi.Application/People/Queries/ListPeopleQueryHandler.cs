@@ -1,26 +1,26 @@
 using PessoasApi.Application.Abstractions;
-using PessoasApi.Domain.Repositories;
 
 namespace PessoasApi.Application.People.Queries;
 
-public sealed class ListPeopleQueryHandler : IQueryHandler<ListPeopleQuery, IReadOnlyList<PersonResponse>>
+public sealed class ListPeopleQueryHandler : IQueryHandler<ListPeopleQuery, PersonResponse>
 {
-    private readonly IPersonRepository _personRepository;
+    private readonly Random _random = Random.Shared;
 
-    public ListPeopleQueryHandler(IPersonRepository personRepository)
-    {
-        _personRepository = personRepository;
-    }
-
-    public async Task<IReadOnlyList<PersonResponse>> HandleAsync(
+    public Task<PersonResponse> HandleAsync(
         ListPeopleQuery query,
         CancellationToken cancellationToken = default)
     {
-        var people = await _personRepository.ListAsync(cancellationToken);
+        var normalizedGender = query.Gender.Trim().ToLowerInvariant();
 
-        return people
-            .OrderBy(person => person.Name)
-            .Select(person => new PersonResponse(person.Id, person.Name))
-            .ToList();
+        var names = normalizedGender switch
+        {
+            "m" => MedievalNamesCatalog.MaleNames,
+            "f" => MedievalNamesCatalog.FemaleNames,
+            _ => throw new ArgumentException("O parâmetro de gênero deve ser 'm' ou 'f'.", nameof(query))
+        };
+
+        var selectedName = names[_random.Next(names.Count)];
+
+        return Task.FromResult(new PersonResponse(Guid.NewGuid(), selectedName));
     }
 }
