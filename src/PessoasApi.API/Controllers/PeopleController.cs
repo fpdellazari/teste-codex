@@ -8,19 +8,31 @@ namespace PessoasApi.API.Controllers;
 [Route("api/pessoas")]
 public sealed class PeopleController : ControllerBase
 {
-    private readonly IQueryHandler<ListPeopleQuery, IReadOnlyList<PersonResponse>> _listPeopleQueryHandler;
+    private readonly IQueryHandler<ListPeopleQuery, PersonResponse> _listPeopleQueryHandler;
 
-    public PeopleController(IQueryHandler<ListPeopleQuery, IReadOnlyList<PersonResponse>> listPeopleQueryHandler)
+    public PeopleController(IQueryHandler<ListPeopleQuery, PersonResponse> listPeopleQueryHandler)
     {
         _listPeopleQueryHandler = listPeopleQueryHandler;
     }
 
     [HttpGet]
-    [ProducesResponseType(typeof(IReadOnlyList<PersonResponse>), StatusCodes.Status200OK)]
-    public async Task<ActionResult<IReadOnlyList<PersonResponse>>> GetAsync(CancellationToken cancellationToken)
+    [ProducesResponseType(typeof(PersonResponse), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<ActionResult<PersonResponse>> GetAsync([FromQuery] string gender, CancellationToken cancellationToken)
     {
-        var people = await _listPeopleQueryHandler.HandleAsync(new ListPeopleQuery(), cancellationToken);
+        if (string.IsNullOrWhiteSpace(gender))
+        {
+            return BadRequest("O parâmetro 'gender' é obrigatório e deve ser 'm' ou 'f'.");
+        }
 
-        return Ok(people);
+        try
+        {
+            var person = await _listPeopleQueryHandler.HandleAsync(new ListPeopleQuery(gender), cancellationToken);
+            return Ok(person);
+        }
+        catch (ArgumentException)
+        {
+            return BadRequest("O parâmetro 'gender' deve ser 'm' ou 'f'.");
+        }
     }
 }
