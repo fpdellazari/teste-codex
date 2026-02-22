@@ -7,4 +7,7 @@
     <ProjectReference Include="../PessoasApi.Application/PessoasApi.Application.csproj" />
     <ProjectReference Include="../PessoasApi.Infrastructure/PessoasApi.Infrastructure.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
 </Project>
